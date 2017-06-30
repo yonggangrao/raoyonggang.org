@@ -1,0 +1,36 @@
+Options -Indexes
+DirectoryIndex main.php
+ErrorDocument 404 /error
+ErrorDocument 403 /error
+
+
+RewriteEngine on
+RewriteBase /
+
+
+
+
+
+#REQUEST_URI 指到是host_addr以后到部分，不是文件名
+
+
+RewriteCond %{REQUEST_URI} ^/(.*)main(\.php)?$
+RewriteRule ^(.*)main(\.php)?$ $1 [R]
+
+RewriteRule ^error$ view/other/error.php
+RewriteRule ^about$ view/other/about.php
+
+RewriteRule ^blog/$ view/blog/list.php [L]
+
+
+
+RewriteRule ^view/blog$ view/other/error.php
+
+RewriteRule ^(\w+)/(\w+)$ view/$1/$2.php
+
+RewriteRule ^(\w+)/(\w+)/(\w+)$ view/$1/$2.php?link_param=$3
+
+
+
+
+

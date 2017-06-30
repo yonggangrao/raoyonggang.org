@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+.contents
+{
+	
+}
+.ul_blog_list
+{
+	display:block;
+	border:0px solid silver;
+	margin-top:80px;
+	line-height:30px;
+}
+li
+{
+	border:0px solid silver;
+	height:40px;
+	line-height:40px;
+}
+.input_modify
+{
+	display:inline-block;
+	margin-left:30px;
+}
+.input_delete
+{
+	display:inline-block;
+	margin-left:10px;
+}
+
+
+@media (max-width: 768px) {
+	.ul_blog_list
+	{
+		margin-top:60px;
+		line-height:30px;
+	}
+	
+}

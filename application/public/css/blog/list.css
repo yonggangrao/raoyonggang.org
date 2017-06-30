@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+.ul_blog_list
+{
+	display:block;
+	border:0px solid silver;
+	margin-top:80px;
+	line-height:30px;
+}
+
+.ul_blog_list li
+{
+	text-align:center;
+}
+
+a:hover
+{
+	font-weight:bold;
+}
+
+@media (max-width: 768px) {
+	.ul_blog_list
+	{
+		margin-top:70px;
+		line-height:30px;
+	}
+	
+}
